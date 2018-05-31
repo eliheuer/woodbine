@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>H</key>
+	<dict>
+		<key>e</key>
+		<integer>0</integer>
+	</dict>
+	<key>e</key>
+	<dict>
+		<key>n</key>
+		<integer>0</integer>
+	</dict>
 	<key>h</key>
 	<dict>
 		<key>i</key>

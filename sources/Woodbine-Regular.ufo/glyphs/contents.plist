@@ -6,6 +6,8 @@
 	<string>E_.glif</string>
 	<key>b</key>
 	<string>b.glif</string>
+	<key>e</key>
+	<string>e.glif</string>
 	<key>h</key>
 	<string>h.glif</string>
 	<key>i</key>
@@ -18,5 +20,7 @@
 	<string>m.glif</string>
 	<key>n</key>
 	<string>n.glif</string>
+	<key>o</key>
+	<string>o.glif</string>
 </dict>
 </plist>
