@@ -1,3 +1,6 @@
+# Apple is bad at design
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
