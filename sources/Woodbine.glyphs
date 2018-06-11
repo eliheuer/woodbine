@@ -6,7 +6,8 @@ n,
 E,
 h,
 k,
-i
+i,
+t
 );
 copyright = "Copyright 2018 The Woodbine Project Authors (https://github.com/eliheuer/woodbine), with Reserved Font Name \"Woodbine\".";
 customParameters = (
@@ -26,10 +27,6 @@ value = "http://scripts.sil.org/OFL";
 name = fsType;
 value = (
 );
-},
-{
-name = trademark;
-value = "";
 },
 {
 name = Axes;
