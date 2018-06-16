@@ -4,7 +4,7 @@ DisplayStrings = (
 "ABCDEFGHIJKLMNOPQRSTUVWXYZ..abcdefghijklmnopqrstuvwxyz....................\012AIAOAAAAOAOAOAOAOAOAOAO",
 LANGUAGE
 );
-copyright = "Copyright 2018 The Woodbine Project Authors (https://github.com/eliheuer/woodbine), with Reserved Font Name \"Woodbine\".";
+copyright = "Copyright 2018 The Woodbine Project Authors, with Reserved Font Name \"Woodbine\".";
 customParameters = (
 {
 name = trademark;
@@ -48,7 +48,7 @@ visible = 1;
 xHeight = 500;
 },
 {
-ascender = 800;
+ascender = 750;
 capHeight = 700;
 custom = Black;
 descender = -200;
