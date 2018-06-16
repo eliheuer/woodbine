@@ -517,7 +517,7 @@ unicode = 0046;
 {
 color = 0;
 glyphname = G;
-lastChange = "2018-06-16 08:30:33 +0000";
+lastChange = "2018-06-16 13:18:40 +0000";
 layers = (
 {
 layerId = "943837FD-2EA4-424D-A655-FFF98A08080F";
@@ -935,7 +935,7 @@ unicode = 004D;
 {
 color = 0;
 glyphname = N;
-lastChange = "2018-06-16 08:30:28 +0000";
+lastChange = "2018-06-16 13:19:10 +0000";
 layers = (
 {
 layerId = "943837FD-2EA4-424D-A655-FFF98A08080F";
@@ -4830,6 +4830,10 @@ weightClass = Bold;
 );
 kerning = {
 "943837FD-2EA4-424D-A655-FFF98A08080F" = {
+A = {
+G = -74;
+N = -58;
+};
 e = {
 n = 0;
 };
