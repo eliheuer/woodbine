@@ -36,10 +36,10 @@ grid(32)
 # Basic Style
 stroke(None)
 fill(1)
-fontSize(80)
-tracking(-1)
+fontSize(64)
+#tracking(-2)
 varWght = 200
-lineH = 80
+lineH = 60
 startP = 830
 # Draw large text
 for i in range(10):
@@ -48,15 +48,15 @@ for i in range(10):
     print("varWght=", varWght) 
     fill(1, i*0.1, 0)
     if i <= 5:
-        text("Woodbine Variable Font", (M+(161-(i*32)), (startP)-(i*lineH)))
+        text("Woodbine", (M, (startP)-(i*lineH)))
     elif i == 6:
         text("ABCDEFGHIJKLMN", (M+15, (startP)-(i*lineH)))
     elif i == 7:
         text("OPQRSTUVWXY&Z", (M+50, (startP)-(i*lineH)))
     elif i == 8:
-        text("abcdefghijklmnopqr", (M+80, (startP)-(i*lineH)))
+        text("abcdefghijklmno", (M+80, (startP)-(i*lineH)))
     elif i == 9:
-        text("stuvwxyz .,:;!?@#%$", (M+95, (startP)-(i*lineH)))
+        text("pqrstuvwxyz", (M+95, (startP)-(i*lineH)))
 
 
 # Save GIF
