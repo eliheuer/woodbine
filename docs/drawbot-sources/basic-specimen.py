@@ -36,18 +36,18 @@ grid(32)
 # Basic Style
 stroke(None)
 fill(1)
-fontSize(64)
+fontSize(96)
 #tracking(-2)
-varWght = 200
-lineH = 60
-startP = 830
+varWght = 300
+lineH = 96
+startP = 802
 # Draw large text
 for i in range(10):
     varWght += 100
     fontVariations(wght=varWght)
     print("varWght=", varWght) 
     fill(1, i*0.1, 0)
-    if i <= 5:
+    if i <= 4:
         text("Woodbine", (M, (startP)-(i*lineH)))
     elif i == 6:
         text("ABCDEFGHIJKLMN", (M+15, (startP)-(i*lineH)))
@@ -60,6 +60,8 @@ for i in range(10):
 
 
 # Save GIF
-#os.chdir("docs")
-#os.chdir("images")
-saveImage("~/Desktop/basic-specimen.gif")
+os.chdir("docs")
+os.chdir("images")
+saveImage("basic-specimen.gif")
+os.chdir("..")
+os.chdir("..")
