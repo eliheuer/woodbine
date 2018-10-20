@@ -1,5 +1,5 @@
 # Woodbine
-A calligraphic sans-serif variable font, a libre Lydian alternative.
+Woodbine is a calligraphic sans-serif variable font, similar to Warren Chappell's Lydian.
 
-# Building fonts
-Install fontmake and run `bash build.sh` from the root directory. 
+## Specimen
+![Woodbine Specimen](https://github.com/eliheuer/woodbine/blob/master/docs/images/basic-specimen.gif?raw=true)
