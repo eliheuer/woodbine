@@ -1,33 +1,39 @@
 import os 
 import subprocess
 
+font_name = 'Woodbine'
+
+def get_cwd():
+    cwd = os.getcwd()
+    print("     Current Working Directory: ", cwd)
 
 try:
-    print("**** Running Fontmake ******************************\n")
-    subprocess.call(['fontmake', '-g', 'sources/Woodbine.glyphs', '-o', 'ttf',])
+    print("\n**** Running Fontmake ******************************\n")
+    get_cwd()
+    subprocess.call(['fontmake', '-g', 'sources/Woodbine.glyphs', '-o', 'variable',])
 except:
     print("Error! Try installing Fontmake: https://github.com/googlei18n/fontmake")
 
-print("\n**** Moving fonts to fonts directory *******************")
-subprocess.call(['cp', 'master_ttf/Woodbine-Regular.ttf', 'fonts/',])
+print("\n**** Moving fonts to fonts directory *******************\n")
+get_cwd()
+subprocess.call(['cp', 'variable_ttf/Woodbine-VF.ttf', 'fonts/',])
 print("     [+] Done")
 
-print("\n**** Removing build directories  ***********************")
-subprocess.call(['rm', '-rf', 'master_ttf', 'master_ufo',])
+print("\n**** Removing build directories  ***********************\n")
+get_cwd()
+subprocess.call(['rm', '-rf', 'variable_ttf', 'master_ufo',])
 print("     [+] Done")
 
 os.chdir("fonts")
-cwd = os.getcwd()
-print("     In Directory:", cwd)
 print("\n**** Run: ttfautohint  *********************************\n")
-subprocess.call(['ttfautohint', '-I', 'Woodbine-Regular.ttf', 'Woodbine-Regular-Fix.ttf'])
-subprocess.call(['cp', 'Woodbine-Regular-Fix.ttf', 'Woodbine-Regular.ttf'])
-subprocess.call(['rm', '-rf', 'Woodbine-Regular-Fix.ttf'])
+get_cwd()
+subprocess.call(['ttfautohint', '-I', 'Woodbine-VF.ttf', 'Woodbine-VF-Fix.ttf'])
+subprocess.call(['cp', 'Woodbine-VF-Fix.ttf', 'Woodbine-VF.ttf'])
+subprocess.call(['rm', '-rf', 'Woodbine-VF-Fix.ttf'])
 print("     [+] Done")
 
 os.chdir("..")
-cwd = os.getcwd()
-print("     In Directory:", cwd)
-print("\n**** Run: gftools  **************************************")
+print("\n**** Run: gftools  **************************************\n")
+get_cwd()
 # subprocess.call(['gftools', 'fix-dsgi', 'fonts/Staatliches-Regular.ttf', '--autofix'])
 
