@@ -1,5 +1,5 @@
 # Woodbine
 A calligraphic sans-serif variable font, a libre Lydian alternative.
 
-# Building fonts
-Install fontmake and run `bash build.sh` from the root directory. 
+## Specimen
+![Woodbine Specimen](https://github.com/eliheuer/woodbine/blob/master/docs/images/basic-specimen.gif?raw=true)
