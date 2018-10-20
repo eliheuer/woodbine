@@ -25,38 +25,42 @@ def grid(inc):
         polygon((M, M+stpY), (H-M, M+stpY))
         stpY += incY
 
+# Draw basic page and grid
+def draw_page():
+    newPage(W, H)
+    fill(0)
+    rect(0, 0, W, H)
+    # Draw the grid (uncomment next line to show)
+    # grid(32)
 
-newPage(W, H)
-fill(0)
-rect(0, 0, W, H)
+def set_style():
+    stroke(None)
+    fill(1)
+    fontSize(96)
+    #tracking(-2)
 
-# Draw the grid (uncomment next line to show)
-grid(32)
 
-# Basic Style
-stroke(None)
-fill(1)
-fontSize(96)
-#tracking(-2)
+# Draw specimen
+draw_page()
+set_style()
+
+# Draw large type
 varWght = 300
 lineH = 96
 startP = 802
-# Draw large text
-for i in range(10):
+for i in range(6):
     varWght += 100
     fontVariations(wght=varWght)
     print("varWght=", varWght) 
-    fill(1, i*0.1, 0)
-    if i <= 4:
-        text("Woodbine", (M, (startP)-(i*lineH)))
-    elif i == 6:
-        text("ABCDEFGHIJKLMN", (M+15, (startP)-(i*lineH)))
-    elif i == 7:
-        text("OPQRSTUVWXY&Z", (M+50, (startP)-(i*lineH)))
-    elif i == 8:
-        text("abcdefghijklmno", (M+80, (startP)-(i*lineH)))
-    elif i == 9:
-        text("pqrstuvwxyz", (M+95, (startP)-(i*lineH)))
+    text("Woodbine", (M+198, (startP)-(i*lineH)))
+
+# Draw small type
+fontVariations(wght=400)
+fontSize(32)
+text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (M+160, (startP)-(i*lineH+(32*3))))
+text("abcdefghijklmnopqrstuvwxyz", (M+200, (startP)-(i*lineH+(32*4))))
+
+
 
 
 # Save GIF
