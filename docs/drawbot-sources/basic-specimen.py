@@ -36,9 +36,8 @@ def draw_page():
 def set_style():
     stroke(None)
     fill(1)
-    fontSize(96)
-    #tracking(-2)
-
+    fontSize(128)
+    tracking(-2)
 
 # Draw specimen
 draw_page()
@@ -52,11 +51,12 @@ for i in range(6):
     varWght += 100
     fontVariations(wght=varWght)
     print("varWght=", varWght) 
-    text("Woodbine", (M+198, (startP)-(i*lineH)))
+    text("Woodbine", (M+138, (startP)-(i*lineH)))
 
 # Draw small type
 fontVariations(wght=400)
-fontSize(32)
+tracking(4)
+fontSize(24)
 text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (M+140, (startP)-(i*lineH+(32*3))))
 text("abcdefghijklmnopqrstuvwxyz", (M+200, (startP)-(i*lineH+(32*4))))
 #text("0123456789!@#$%^&*", (M+200, (startP)-(i*lineH+(32*5))))
