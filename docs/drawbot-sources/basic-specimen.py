@@ -15,7 +15,7 @@ for axis, data in listFontVariations().items():
     print((axis, data))
 
 def grid(inc):
-    stroke(0.3)
+    stroke(0.1)
     stpX, stpY = 0, 0
     incX, incY = inc, inc
     for x in range(int(((W-(M*2))/inc)+1)):
@@ -31,7 +31,7 @@ def draw_page():
     fill(0)
     rect(0, 0, W, H)
     # Draw the grid (uncomment next line to show)
-    # grid(32)
+    grid(32)
 
 def set_style():
     stroke(None)
@@ -57,11 +57,9 @@ for i in range(6):
 # Draw small type
 fontVariations(wght=400)
 fontSize(32)
-text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (M+160, (startP)-(i*lineH+(32*3))))
+text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (M+140, (startP)-(i*lineH+(32*3))))
 text("abcdefghijklmnopqrstuvwxyz", (M+200, (startP)-(i*lineH+(32*4))))
-
-
-
+#text("0123456789!@#$%^&*", (M+200, (startP)-(i*lineH+(32*5))))
 
 # Save GIF
 os.chdir("docs")
